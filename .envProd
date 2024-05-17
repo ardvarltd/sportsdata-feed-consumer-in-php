@@ -1,0 +1,12 @@
+BOOTSTRAP_SERVERS=kafka-server
+SCHEMA_REGISTRY=schema-registry
+SASL_MECHANISM=SCRAM-SHA-512
+SECURITY_PROTOCOL=SASL_SSL
+SASL_USERNAME=your username
+SASL_PASSWORD=your password
+CLIENT_ID=local.sports.data.streams.example.app.php
+GROUP_ID=local.sports.data.streams.example.app.php
+AUTO_OFFSET_RESET=earliest
+EVENT_TOPIC=stream.avro.ardevar.sport.events
+MARKET_TOPIC=stream.avro.ardevar.sport.markets
+SETTLEMENT_TOPIC=stream.avro.ardevar.sport.settlements

@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  events.feed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .envProd
+    environment: {
+      BUILDER_TYPE: src/kafka/consumer/EventConsumer.php
+    }
+  settlements.feed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .envProd
+    environment: {
+      BUILDER_TYPE: src/kafka/consumer/SettlementConsumer.php
+    }
+  markets.feed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .envProd
+    environment: {
+      BUILDER_TYPE: src/kafka/consumer/MarketConsumer.php
+    }
