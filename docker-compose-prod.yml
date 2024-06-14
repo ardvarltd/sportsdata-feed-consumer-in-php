@@ -25,3 +25,11 @@ services:
     environment: {
       BUILDER_TYPE: src/kafka/consumer/MarketConsumer.php
     }
+  enumeration.feed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .envProd
+    environment: {
+      BUILDER_TYPE: src/kafka/consumer/EnumerationConsumer.php
+    }

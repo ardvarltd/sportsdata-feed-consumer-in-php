@@ -10,3 +10,4 @@ AUTO_OFFSET_RESET=earliest
 EVENT_TOPIC=stream.avro.ardevar.sport.events
 MARKET_TOPIC=stream.avro.ardevar.sport.markets
 SETTLEMENT_TOPIC=stream.avro.ardevar.sport.settlements
+ENUMERATION_TOPIC=stream.avro.ardevar.sport.enumerations
