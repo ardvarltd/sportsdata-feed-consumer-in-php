@@ -11,3 +11,12 @@ EVENT_TOPIC=stream.avro.ardevar.sport.events
 MARKET_TOPIC=stream.avro.ardevar.sport.markets
 SETTLEMENT_TOPIC=stream.avro.ardevar.sport.settlements
 ENUMERATION_TOPIC=stream.avro.ardevar.sport.enumerations
+
+COUNTRIES_TOPIC=stream.avro.ardevar.sport.enumeration.countries
+GAME_PERIODS_TOPIC=stream.avro.ardevar.sport.enumeration.game-periods
+LEAGUES_TOPIC=stream.avro.ardevar.sport.enumeration.leagues
+LINE_ENTITIES_TOPIC=stream.avro.ardevar.sport.enumeration.line-entities
+MARKET_LINES_TOPIC=stream.avro.ardevar.sport.enumeration.market-lines
+MARKET_TYPES_TOPIC=stream.avro.ardevar.sport.enumeration.market-types
+SPORTS_TOPIC=stream.avro.ardevar.sport.enumeration.sports
+TEAMS_TOPIC=stream.avro.ardevar.sport.enumeration.teams

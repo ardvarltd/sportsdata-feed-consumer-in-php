@@ -33,3 +33,67 @@ services:
     environment: {
       BUILDER_TYPE: src/kafka/consumer/EnumerationConsumer.php
     }
+  enum.country.feed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .envProd
+    environment: {
+      BUILDER_TYPE: src/kafka/consumer/CountryConsumer.php
+    }
+  enum.game-period.feed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .envProd
+    environment: {
+      BUILDER_TYPE: src/kafka/consumer/GamePeriodConsumer.php
+    }
+  enum.league.feed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .envProd
+    environment: {
+      BUILDER_TYPE: src/kafka/consumer/LeagueConsumer.php
+    }
+  enum.line-entity.feed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .envProd
+    environment: {
+      BUILDER_TYPE: src/kafka/consumer/LineEntityConsumer.php
+    }
+  enum.market-type.feed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .envProd
+    environment: {
+      BUILDER_TYPE: src/kafka/consumer/MarketTypeConsumer.php
+    }
+  enum.sport.feed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .envProd
+    environment: {
+      BUILDER_TYPE: src/kafka/consumer/SportConsumer.php
+    }
+  enum.team.feed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .envProd
+    environment: {
+      BUILDER_TYPE: src/kafka/consumer/TeamConsumer.php
+    }
+  enum.market-line.feed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .envProd
+    environment: {
+      BUILDER_TYPE: src/kafka/consumer/MarketLineConsumer.php
+    }
